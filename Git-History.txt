@@ -1,0 +1,208 @@
+    1  cd /
+    2  apt-get install git
+    3  sudo apt-get install git
+    4  sudo apt-get update
+    5  ls
+    6  cd .
+    7  cd home/
+    8  ls
+    9  cd labuser/
+   10  ls
+   11  cd Documents/
+   12  ls
+   13  mkdir myrepo
+   14  git status
+   15  cd myrepo/
+   16  ls
+   17  cat readme.txt
+   18  vi readme.txt
+   19  ls
+   20  git init
+   21  ls
+   22  git statis
+   23  git status
+   24  vi hello.txt 
+   25  git status
+   26  git add hello.txt 
+   27  git status
+   28  git rm --cache hello.txt 
+   29  git status
+   30  git add hello.txt 
+   31  git status
+   32  git commit -m "New file hello.txt is added"
+   33  git status
+   34  git log
+   35  git status
+   36  git add readme.txt 
+   37  git status
+   38  git commit -m "New file readme.txt is added"
+   39  git config --global --edit
+   40  git commit -m "New file readme.txt is added"
+   41  git status
+   42  git log
+   43  vi new1.txt
+   44  git status
+   45  git add new1.txt 
+   46  git status
+   47  git commit -m "New file new1.txt is added"
+   48  git log
+   49  git config --global user.name "Jegapriya"
+   50  git config --global user.email "Jegapriya.M2@mindtree.com"
+   51  git log
+   52  vi new2.txt
+   53  git add new2.txt 
+   54  git status
+   55  git commit -m "New file new2.txt is added"
+   56  git log
+   57  ls
+   58  git status
+   59  git log
+   60  git diff b03a..6fdf
+   61  git branch
+   62  date >> new2.txt
+   63  git commit -m "Added date to new2.txt"
+   64  git add new2.txt 
+   65  git commit -m "Added date to new2.txt"
+   66  git log
+   67  cat Head
+   68  cat HEAD
+   69  git branch
+   70  cd .git
+   71  cat Head
+   72  cat head
+   73  git branch
+   74  cd ..
+   75  git branch
+   76* 
+   77  cat heads
+   78  git branch uat
+   79  git branch test
+   80  git branch
+   81  cat .git/HEAD
+   82  git checkout uat
+   83  git branch
+   84  cat .git/refs/heads/uat
+   85  vi UAT.txt
+   86  git add .
+   87  git status
+   88  ls
+   89  git commit -m "New Fie UAT.txt is added"
+   90  git log
+   91  cat .git/refs/heads/uat
+   92  git checkout master
+   93  git branch
+   94  cat .git/refs/heads/master
+   95  git history
+   96  history
+   97  git branch
+   98  echo "Apple" | git hash-object --stdin -w
+   99  git cat-file 05ceae90dfdb30aac63c9f351a775df20893c005 -t
+  100  git cat-file 05ceae90dfdb30aac63c9f351a775df20893c005 -p
+  101  cd .git/
+  102  cd objects/
+  103  ls
+  104  tree
+  105  trees
+  106  git treee
+  107  git tree
+  108  cd 05
+  109  ls
+  110  history
+  111  cd ..
+  112  git checkout uat 
+  113  ls
+  114  git checkout master
+  115  ls
+  116  cat .git/HEAD
+  117  git checkout uat 
+  118  cat .git/HEAD
+  119  git log
+  120  git checkout master
+  121  git log
+  122  git branch
+  123  git checkout uat
+  124  git branch
+  125  git log
+  126  git branch
+  127  git checkout master
+  128  cat "Master Branch" > Master.txt
+  129  cat "Master Branch" >> Master.txt
+  130  "Master Branch" >> Master.txt
+  131  vi Master.txt
+  132  git add .; git commit -m "Added Master file"
+  133  ls
+  134  git checkout uat
+  135  git merge uat
+  136  git checkout master
+  137  git merge uat
+  138  ls
+  139  cat .git/refs/heads/
+  140  cat .git/refs/heads
+  141  cat .git/refs/heads/master
+  142  .git/refs/heads/
+  143  ls .git/refs/heads/
+  144  git log
+  145  git log -2
+  146  cat .git/refs/heads/*
+  147  git branch
+  148  git log -1
+  149  git log uat -1
+  150  git log test -1
+  151  git log -3
+  152  git log uat -3
+  153  git log master -3
+  154  ls
+  155  cat "New Master file line 1" >> Master.txt 
+  156  "New Master file line 1" >> Master.txt 
+  157  vi "New Master file line 1" >> Master.txt 
+  158  cat Master.txt 
+  159  git "New master file line 1" >> Master.txt
+  160  git cat-file "New master file line 1" >> Master.txt
+  161  cat --help
+  162  echo "New master file line 1" >> Master.txt
+  163  cat Master.txt 
+  164  ls
+  165  git status
+  166  git add .; git commit -m "Master file 1 line has been added"
+  167  git log
+  168  git log -1
+  169  ls
+  170  git rm new1.txt 
+  171  git commit -m "new1.txt removed"
+  172  ls
+  173  git status
+  174  git log
+  175  git checkout bec9f5942776d2a7a3554a2e8371e8fa4ec9135a
+  176  git log
+  177  ls
+  178  git status
+  179  git rm q
+  180  rm q
+  181  ls
+  182  history
+  183  cd ..
+  184  git clone https://github.com/Jegapriya/devops301-Capstone.git
+  185  ls
+  186  cd devops301-Capstone/
+  187  ls
+  188  git branch
+  189  echo "Welcome to Git" >> Git-Hello.txt
+  190  git add .; git commit -m "Git-Hello.txt is added"
+  191  git status
+  192  git log
+  193  git push
+  194  ls
+  195  cd ..
+  196  git clone https://github.com/amitvashisttech/devops301-mindtree-15-June-2021.git
+  197  l
+  198  cd devops301-Capstone/
+  199  ls
+  200  date >> Git-Hello.txt 
+  201  git add .; git commit -m "Date 1 has been added"
+  202  date >> Git-Hello.txt 
+  203  git add .; git commit -m "Date 2 has been added"
+  204  git status
+  205  git push
+  206  git status
+  207  git log
+  208  history >> Git-History.txt
