@@ -1,0 +1,19 @@
+---
+
+nginx:
+  image: nginx:latest
+  ports:
+    - '8091:80'
+
+
+
+tomcat-petclinic:
+  image: tomcat-petclinic:v1
+  ports: 
+    - "8080"
+
+
+myapache:
+  image: myapache:v3
+  ports:
+    - "80"
