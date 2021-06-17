@@ -1,0 +1,24 @@
+172.17.0.1
+10.0.0.4
+
+
+[web]
+172.17.0.1
+
+[web:vars]
+ansible_ssh_user = kinduser
+
+[ansible]
+10.0.0.4 ansible_ssh_user=minduser
+
+[db]
+172.17.0.1[0:5]
+
+[dc:children]
+web
+ansible
+
+
+[dc:vars]
+ansible_ssh_user = labuser
+ansible_ssh_pass = Mindtree123$
