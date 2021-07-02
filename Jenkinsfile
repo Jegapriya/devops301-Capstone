@@ -27,11 +27,6 @@ node('master') {
     stage('Publish Build Info'){
 	server.publishBuildInfo buildInfo
     }
-
-
-    stage('Artifact'){
-        archiveArtifacts artifacts: 'target/*.war', followSymlinks: false
-    }
     
     stage('Checkout From Git'){
         git branch: 'main', url: 'https://github.com/Jegapriya/devops301-Capstone.git'

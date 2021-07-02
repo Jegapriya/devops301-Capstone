@@ -47,3 +47,7 @@ webroot: $user.home/.jenkins
 2021-07-02 11:50:56.427+0000 [id=183]	INFO	o.j.p.workflow.job.WorkflowRun#finish: EmpDeptSpring-FinalProject #2 completed: FAILURE
 2021-07-02 11:50:56.881+0000 [id=201]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Connection Activity monitoring to agents
 2021-07-02 11:50:56.882+0000 [id=201]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Connection Activity monitoring to agents. 0 ms
+2021-07-02 11:53:18.657+0000 [id=226]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: Deploying build info to: /api/build
+2021-07-02 11:53:18.850+0000 [id=226]	SEVERE	o.j.h.util.JenkinsBuildInfoLog#error: Could not build the build-info object.
+2021-07-02 11:53:18.853+0000 [id=288]	SEVERE	o.j.h.util.JenkinsBuildInfoLog#error: Failed sending usage report to Artifactory: java.io.IOException: Could not get Artifactory version.
+2021-07-02 11:53:19.151+0000 [id=223]	INFO	o.j.p.workflow.job.WorkflowRun#finish: EmpDeptSpring-FinalProject #3 completed: FAILURE
