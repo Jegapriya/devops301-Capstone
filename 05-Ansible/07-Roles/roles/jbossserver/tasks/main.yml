@@ -1,0 +1,22 @@
+---
+# tasks file for jbossserver
+- name: JBoss Home Dir
+  file: path={{doc_jboss}}/jboss state=directory
+
+- name: Install Default JDK 1.8
+  apt: name=default-jdk state=present
+
+- name: Download JBoss Zip
+  get_url: url={{download_url}} dest={{doc_jboss}}/jboss.zip mode=0755
+
+- name: Extract JBoss Zip
+  command: "unzip {{doc_jboss}}/jboss.zip -d {{doc_jboss}}"
+
+- name: Add JBoss User
+  shell: "/opt/SP/apps/wildfly-24.0.0.Final/bin/add-user.sh --silent=true {{admin_user}} {{admin_pwd}}"
+
+- name: Copy War File
+  copy: src=files/petclinic.war dest={{doc_jboss}}/wildfly-24.0.0.Final/standalone/deployments/
+
+- name: Start JBoss App Server
+  shell: "nohup  /opt/SP/apps/wildfly-24.0.0.Final/bin/standalone.sh --admin-only"

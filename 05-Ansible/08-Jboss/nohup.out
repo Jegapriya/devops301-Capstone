@@ -1,0 +1,215 @@
+=========================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: /opt/SP/apps/jboss/wildfly-24.0.0.Final
+
+  JAVA: java
+
+  JAVA_OPTS:  -server -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true 
+
+=========================================================================
+
+[0m07:25:01,601 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final
+[0mWFLYSRV0073: Invalid option 'start'
+
+Usage: standalone.sh [args...]
+where args include:
+    --admin-only                        Set the server's running type to 
+                                        ADMIN_ONLY causing it to open 
+                                        administrative interfaces and accept 
+                                        management requests but not start other 
+                                        runtime services or accept end user 
+                                        requests. Cannot be used in conjunction 
+                                        with --start-mode. Deprecated; use 
+                                        --start-mode=admin-only instead.
+
+
+    -b <value>, -b=<value>              Set system property jboss.bind.address 
+                                        to the given value
+
+
+    -b<interface>=<value>               Set system property 
+                                        jboss.bind.address.<interface> to the 
+                                        given value
+
+
+    -c <config>, -c=<config>            Name of the server configuration file 
+                                        to use (default is "standalone.xml") 
+                                        (Same as --server-config)
+
+
+    --debug [<port>]                    Activate debug mode with an optional 
+                                        argument to specify the port. Only 
+                                        works if the launch script supports it.
+
+
+    -D<name>[=<value>]                  Set a system property
+
+
+    -h, --help                          Display this message and exit
+
+
+    --read-only-server-config=<config>  Name of the server configuration file 
+                                        to use. This differs from 
+                                        '--server-config' and '-c' in that the 
+                                        original file is never overwritten.
+
+
+    -P <url>, -P=<url>,                 Load system properties from the given 
+         --properties=<url>             url
+
+
+    -S<name>[=<value>]                  Set a security property
+
+
+    --server-config=<config>            Name of the server configuration file 
+                                        to use (default is "standalone.xml") 
+                                        (Same as -c)
+
+
+    -u <value>, -u=<value>              Set system property 
+                                        jboss.default.multicast.address to the 
+                                        given value
+
+
+    -v, -V, --version                   Print version and exit
+
+
+    -secmgr                             Runs the server with a security manager 
+                                        installed.
+
+
+    --start-mode                        Sets the start mode of the server, it 
+                                        can be either 'normal','admin-only' or 
+                                        'suspend'. If this is 'suspend' the 
+                                        server will start in suspended mode, 
+                                        and will not service requests until it 
+                                        has been resumed. If this is started in 
+                                        admin-only mode the server will only 
+                                        open administrative interfaces and 
+                                        accept management requests but not 
+                                        start other runtime services or accept 
+                                        end user requests. Cannot be used in 
+                                        conjunction with --admin-only.
+
+
+    --graceful-startup=<value>          Start the server gracefully, queuing or 
+                                        cleanly rejecting requests until the 
+                                        server is fully started
+
+
+    --git-repo <repo_url>,              The git repository to clone to get the 
+         --git-repo=<repo_url>          server configuration.
+
+
+    --git-branch <branch>,              The git branch to use to get the server 
+         --git-branch=<branch>          configuration. Default is 'master'
+
+
+    --git-auth <auth_config>,           The elytron configuration file for 
+         --git-auth=<auth_config>       managing git credentials. Default is 
+                                        'null'
+
+
+[31m07:25:02,091 FATAL [org.jboss.as.server] (main) WFLYSRV0239: Aborting with exit code 1
+[0m=========================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: /opt/SP/apps/jboss/wildfly-24.0.0.Final
+
+  JAVA: java
+
+  JAVA_OPTS:  -server -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true 
+
+=========================================================================
+
+[0m07:30:01,446 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final
+[0m[0m07:30:02,136 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final
+[0m[0m07:30:02,148 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+[0m[0m07:30:02,245 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 24.0.0.Final (WildFly Core 16.0.0.Final) starting
+[0m[0m07:30:03,183 INFO  [org.wildfly.security] (ServerService Thread Pool -- 15) ELY00001: WildFly Elytron version 1.16.0.Final
+[0m[0m07:30:03,471 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 9) WFLYCTL0033: Extension 'security' is deprecated and may not be supported in future versions
+[0m[0m07:30:03,861 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m07:30:03,950 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m07:30:04,015 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m07:30:04,031 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.8.4.Final
+[0m[0m07:30:04,038 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.8.4.Final
+[0m[0m07:30:04,118 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.23.Final
+[0m[33m07:30:04,140 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY00023: KeyStore file '/opt/SP/apps/jboss/wildfly-24.0.0.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+[0m[33m07:30:04,150 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-2) WFLYELY01084: KeyStore /opt/SP/apps/jboss/wildfly-24.0.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+[0m[0m07:30:04,201 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+[0m[33m07:30:04,241 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /opt/SP/apps/jboss/wildfly-24.0.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m07:30:04,434 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m07:30:04,435 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 24.0.0.Final (WildFly Core 16.0.0.Final) started in 3644ms - Started 76 of 94 services (34 services are lazy, passive or on-demand)
+[0m[0m07:30:04,439 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+[0m[0m07:30:04,439 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
+[0m[0m07:30:06,640 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0272: Suspending server
+[0m[0m07:30:06,642 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+[0m[0m07:30:06,667 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly Full 24.0.0.Final (WildFly Core 16.0.0.Final) stopped in 20ms
+[0m=========================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: /opt/SP/apps/jboss/wildfly-24.0.0.Final
+
+  JAVA: java
+
+  JAVA_OPTS:  -server -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true 
+
+=========================================================================
+
+[0m07:31:18,466 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final
+[0m[0m07:31:19,082 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final
+[0m[0m07:31:19,095 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+[0m[0m07:31:19,228 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 24.0.0.Final (WildFly Core 16.0.0.Final) starting
+[0m[0m07:31:20,137 INFO  [org.wildfly.security] (ServerService Thread Pool -- 11) ELY00001: WildFly Elytron version 1.16.0.Final
+[0m[0m07:31:20,433 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 14) WFLYCTL0033: Extension 'security' is deprecated and may not be supported in future versions
+[0m[0m07:31:20,838 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m07:31:20,935 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m07:31:20,993 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m07:31:21,008 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.8.4.Final
+[0m[0m07:31:21,013 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.8.4.Final
+[0m[33m07:31:21,089 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY00023: KeyStore file '/opt/SP/apps/jboss/wildfly-24.0.0.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+[0m[33m07:31:21,106 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-2) WFLYELY01084: KeyStore /opt/SP/apps/jboss/wildfly-24.0.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+[0m[0m07:31:21,148 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.23.Final
+[0m[0m07:31:21,156 INFO  [org.jboss.as.patching] (MSC service thread 1-3) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+[0m[33m07:31:21,193 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /opt/SP/apps/jboss/wildfly-24.0.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m07:31:21,394 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m07:31:21,395 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 24.0.0.Final (WildFly Core 16.0.0.Final) started in 3328ms - Started 76 of 94 services (34 services are lazy, passive or on-demand)
+[0m[0m07:31:21,397 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+[0m[0m07:31:21,397 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
+[0m=========================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: /opt/SP/apps/jboss/wildfly-24.0.0.Final
+
+  JAVA: java
+
+  JAVA_OPTS:  -server -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true 
+
+=========================================================================
+
+[0m07:32:13,696 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final
+[0m[0m07:32:14,329 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final
+[0m[0m07:32:14,342 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+[0m[0m07:32:14,472 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 24.0.0.Final (WildFly Core 16.0.0.Final) starting
+[0m[0m07:32:15,408 INFO  [org.wildfly.security] (ServerService Thread Pool -- 13) ELY00001: WildFly Elytron version 1.16.0.Final
+[0m[0m07:32:15,710 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 15) WFLYCTL0033: Extension 'security' is deprecated and may not be supported in future versions
+[0m[0m07:32:16,060 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m07:32:16,176 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m07:32:16,245 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m07:32:16,267 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.8.4.Final
+[0m[0m07:32:16,288 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.8.4.Final
+[0m[33m07:32:16,346 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY00023: KeyStore file '/opt/SP/apps/jboss/wildfly-24.0.0.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+[0m[33m07:32:16,378 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY01084: KeyStore /opt/SP/apps/jboss/wildfly-24.0.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+[0m[0m07:32:16,399 INFO  [org.jboss.as.patching] (MSC service thread 1-3) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+[0m[0m07:32:16,411 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.23.Final
+[0m[33m07:32:16,418 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /opt/SP/apps/jboss/wildfly-24.0.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m07:32:16,673 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m07:32:16,674 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 24.0.0.Final (WildFly Core 16.0.0.Final) started in 3359ms - Started 76 of 94 services (34 services are lazy, passive or on-demand)
+[0m[0m07:32:16,676 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+[0m[0m07:32:16,676 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
+[0m
