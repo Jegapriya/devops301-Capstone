@@ -1,8 +1,5 @@
 node('master') {
     
-    // Get Artifactory Server Instance Details
-    def server = Artifactory.server "01"
-    def buildInfo = Artifactory.newBuildInfo()
 
     stage('Checkout From Git'){
         git branch: 'Jenkins', url: 'https://github.com/Jegapriya/EmpDeptSpring.git'
@@ -22,10 +19,6 @@ node('master') {
     
     stage('package'){
         sh 'mvn package'
-    }
- 
-    stage('Publish Build Info'){
-	server.publishBuildInfo buildInfo
     }
     
     stage('Checkout From Git'){

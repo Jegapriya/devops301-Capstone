@@ -51,3 +51,7 @@ webroot: $user.home/.jenkins
 2021-07-02 11:53:18.850+0000 [id=226]	SEVERE	o.j.h.util.JenkinsBuildInfoLog#error: Could not build the build-info object.
 2021-07-02 11:53:18.853+0000 [id=288]	SEVERE	o.j.h.util.JenkinsBuildInfoLog#error: Failed sending usage report to Artifactory: java.io.IOException: Could not get Artifactory version.
 2021-07-02 11:53:19.151+0000 [id=223]	INFO	o.j.p.workflow.job.WorkflowRun#finish: EmpDeptSpring-FinalProject #3 completed: FAILURE
+2021-07-02 11:54:55.791+0000 [id=315]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: Deploying build info to: /api/build
+2021-07-02 11:54:55.805+0000 [id=315]	SEVERE	o.j.h.util.JenkinsBuildInfoLog#error: Could not build the build-info object.
+2021-07-02 11:54:55.811+0000 [id=382]	SEVERE	o.j.h.util.JenkinsBuildInfoLog#error: Failed sending usage report to Artifactory: java.io.IOException: Could not get Artifactory version.
+2021-07-02 11:54:56.146+0000 [id=385]	INFO	o.j.p.workflow.job.WorkflowRun#finish: EmpDeptSpring-FinalProject #4 completed: FAILURE
