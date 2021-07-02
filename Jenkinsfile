@@ -20,6 +20,10 @@ node('master') {
     stage('package'){
         sh 'mvn package'
     }
+
+    stage('Archive Artifact') {
+      archiveArtifacts artifacts: 'target/*.war', followSymlinks: false
+    }
     
     stage('Checkout From Git'){
         git branch: 'main', url: 'https://github.com/Jegapriya/devops301-Capstone.git'

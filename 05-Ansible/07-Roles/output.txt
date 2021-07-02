@@ -32,3 +32,5 @@ webroot: $user.home/.jenkins
 2021-07-02 15:00:38.697+0000 [id=27]	INFO	o.s.b.f.s.DefaultListableBeanFactory#preInstantiateSingletons: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7927a15e: defining beans [filter,legacy]; root of factory hierarchy
 2021-07-02 15:00:38.757+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
 2021-07-02 15:00:38.853+0000 [id=19]	INFO	hudson.WebAppMain$3#run: Jenkins is fully up and running
+2021-07-02 15:01:56.853+0000 [id=106]	INFO	o.j.p.workflow.job.WorkflowRun#finish: EmpDeptSpring-FinalProject #6 completed: FAILURE
+2021-07-02 15:02:38.318+0000 [id=103]	INFO	o.j.p.workflow.job.WorkflowRun#finish: EmpDeptSpring-FinalProject #7 completed: FAILURE
