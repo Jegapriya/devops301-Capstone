@@ -55,3 +55,9 @@ webroot: $user.home/.jenkins
 2021-07-02 11:54:55.805+0000 [id=315]	SEVERE	o.j.h.util.JenkinsBuildInfoLog#error: Could not build the build-info object.
 2021-07-02 11:54:55.811+0000 [id=382]	SEVERE	o.j.h.util.JenkinsBuildInfoLog#error: Failed sending usage report to Artifactory: java.io.IOException: Could not get Artifactory version.
 2021-07-02 11:54:56.146+0000 [id=385]	INFO	o.j.p.workflow.job.WorkflowRun#finish: EmpDeptSpring-FinalProject #4 completed: FAILURE
+2021-07-02 11:57:09.510+0000 [id=408]	INFO	o.j.p.workflow.job.WorkflowRun#finish: EmpDeptSpring-FinalProject #5 completed: FAILURE
+2021-07-02 12:34:08.599+0000 [id=585]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
+2021-07-02 12:34:08.600+0000 [id=585]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 1 ms
+2021-07-02 13:02:06.989+0000 [id=21]	INFO	winstone.Logger#logInternal: JVM is terminating. Shutting down Jetty
+2021-07-02 13:02:07.138+0000 [id=21]	INFO	o.e.j.server.AbstractConnector#doStop: Stopped ServerConnector@69d9c55{HTTP/1.1, (http/1.1)}{0.0.0.0:9090}
+2021-07-02 13:02:07.138+0000 [id=21]	INFO	o.e.j.server.session.HouseKeeper#stopScavenging: node0 Stopped scavenging
